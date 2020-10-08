@@ -12,7 +12,7 @@ after_success:
     - docker build -t abijeethdarwin/docker-fib-client ./client
     - docker build -t abijeethdarwin/docker-fib-nginx ./nginx
     - docker build -t abijeethdarwin/docker-fib-server ./server
-    - docker build -t abijeethdarwin/docker-fib-workder ./worker
+    - docker build -t abijeethdarwin/docker-fib-worker ./worker
     # Login to Docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Push the docker images
@@ -20,4 +20,4 @@ after_success:
     - docker push abijeethdarwin/docker-fib-nginx
     - docker push abijeethdarwin/docker-fib-server
     - docker push abijeethdarwin/docker-fib-worker
-    
+

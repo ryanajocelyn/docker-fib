@@ -26,7 +26,7 @@ deploy:
     region: "ap-south-1"
     app: "docker-fib"
     env: "DockerFib-env"
-    bucket_name: ""
+    bucket_name: "elasticbeanstalk-ap-south-1-377733686601"
     bucket_path: "docker-fib"
     on:
         branch: master
